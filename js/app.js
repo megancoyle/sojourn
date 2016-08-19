@@ -18,8 +18,8 @@
           controller: "TripsIndexCtrl",
           controllerAs: "indexVm"
         })
-        .state("tripShow", {
-          url: "trips/:id",
+        .state("entryShow", {
+          url: "entryies/:id",
           templateUrl: "js/trips/show.html",
           controller: "TripsShowCtrl",
           controllerAs: "showVm"

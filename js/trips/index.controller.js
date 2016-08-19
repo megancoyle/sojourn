@@ -7,7 +7,7 @@
 
   function TripsIndexCtrlFunc() {
     var indexVm = this;
-    indexVm.entries = dummyData;
+    indexVm.trips = dummyData;
     indexVm.newTrip = {};
 
     indexVm.create = function() {

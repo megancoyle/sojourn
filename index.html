@@ -26,9 +26,16 @@
     <script src="js/trips/show.controller.js"></script>
   </head >
   <body data-ng-app="sojourn">
-    <h1>Sojourn</h1>
-    <a data-ui-sref="tripsIndex">Trips Index</a>
-    <div data-ui-view></div>
+    <header>
+      <div class="container">
+        <h1 id="logo"><a href="/">Sojourn</a></h1>
+        <nav>
+          <a data-ui-sref="tripsIndex">Trips</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container" data-ui-view>
+    </main>
 
   </body>
 </html>

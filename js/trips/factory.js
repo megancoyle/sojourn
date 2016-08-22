@@ -10,14 +10,14 @@ function TripFactoryFunc(){
   return [
     // API query goes here, probably
     {
-      author: "Ben",
-      body: "this is Ben's awesometacular trip",
-      photo_url: "#"
+      destination: "Columbus",
+      start: "November 5th, 2002",
+      end: "November 12th, 2002"
     },
     {
-      author: "Megan",
-      body: "this is Megan's supercool trip",
-      photo_url: "#"
+      destination: "Boise",
+      start: "May 4th, 2008",
+      end: "May 20th, 2008"
     }
   ];
 }

@@ -2,10 +2,12 @@
 
 angular
 .module("destinations")
-.controller("DestIndexCtrl", DestIndexCtrlFunction)
+.controller("DestIndexCtrl", ["DestFactory", DestIndexCtrlFunction])
 
 }())
 
-function DestIndexCtrlFunction(){
-  console.log("hi mom");
+function DestIndexCtrlFunction(DestFactory){
+  var indexVm = this;
+
+  indexVm.destinations = DestFactoryFunc();
 }

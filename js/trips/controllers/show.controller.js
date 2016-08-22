@@ -4,8 +4,6 @@
     .module("trips")
     .controller("TripsShowCtrl", TripsShowCtrlFunc)
 
-    // console.log("hi mom");
-
 
   TripsShowCtrlFunc.$inject = ["$stateParams"]
   function TripsShowCtrlFunc($stateParams) {

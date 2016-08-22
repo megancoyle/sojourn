@@ -21,18 +21,18 @@ class Api::TripsController < ApplicationController
     @trip = Trip.new(trip_params)
 
     if @trip.save
-      format.json { render json: @trip, status: :created }
+      render json: @trip, status: :created
     else
-      format.json { render json: @trip, status: :unprocessable_entity }
+      render json: @trip, status: :unprocessable_entity
     end
   end
 
   def update
     @trip = Trip.find(params[:id])
     if @trip.update(trip_params)
-      format.json { head :no_content, status: :ok }
+      render json: @trip
     else
-      format.json { render json: @trip.errors, status: :unprocessable_entity }
+      render json: @trip.errors, status: :unprocessable_entity
     end
   end
 
@@ -48,7 +48,7 @@ class Api::TripsController < ApplicationController
 
   private
     def trip_params
-      params.require(:trip).permit(:location, :start, :end)
+      params.permit(:location, :start, :end)
     end
 
 end

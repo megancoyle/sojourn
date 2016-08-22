@@ -22,6 +22,7 @@ gem "bower-rails", "~> 0.10.0"
 
 gem 'angular-rails-templates'
 
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

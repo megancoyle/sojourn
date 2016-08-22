@@ -15,8 +15,12 @@
     indexVm.newTrip = {};
 
     indexVm.create = function(){
-      indexVm.trips.push(indexVm.newTrip);
-      indexVm.newTrip = {};
+      this.trip = new TripFactory();
+      this.create = function() {
+        this.trip.$save()
+      }
+      // indexVm.trips.push(indexVm.newTrip);
+      // indexVm.newTrip = {};
       }
   }
 })();

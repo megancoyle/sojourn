@@ -1,0 +1,22 @@
+{:uriI"{file://app/assets/templates/show.html?type=text/ng-html&id=49abea9f9d08a21204c8da6c2f0f32c2ed5f90f1ce4e0c1ca5aee2a51d4e0a2a:ET:load_pathI"app/assets/templates;T:filenameI"#app/assets/templates/show.html;T:	nameI"	show;T:logical_pathI"show.html;T:content_typeI"text/ng-html;T:sourceI"ë<div class="content">
+
+  <h2>Entry Show</h2>
+  <img data-ng-src="{{showVm.trip.photo_url}}">
+  <p>{{showVm.trip.author}}</p>
+  <p>{{showVm.trip.body}}</p>
+
+  <form data-ng-submit="showVm.update()">
+    <input data-ng-model="showVm.trip.author" />
+    <input data-ng-model="showVm.trip.body" />
+    <input data-ng-model="showVm.trip.photo_url" />
+    <button type="submit">Update</button>
+    <button data-ui-sref="tripsIndex" data-ng-click="showVm.delete()">Delete</button>
+  </form>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"1file-digest://app/assets/templates/show.html;TTF:charsetI"
+utf-8;F:digest"%í/RóFŠapÏª×ùC6ÏïÙÅã-*sÜ~èµ:lengthië:dependencies_digest"%h¤FÔøâ`°3¶ä
+î
+%ÁÖÂ˜rÃJJ7¹û#:idI"E49abea9f9d08a21204c8da6c2f0f32c2ed5f90f1ce4e0c1ca5aee2a51d4e0a2a;F:
+mtimel+cåºW

@@ -10,14 +10,13 @@
     ])
 
   function TripsIndexCtrlFunc($scope, TripFactory){
-    // $scope.trips = TripFactoryFunc().query;
-    this.trips = TripFactory.query();
-    // console.log($scope.trips);
+    var indexVm = this;
+    indexVm.trips = TripFactory.query();
+    indexVm.newTrip = {};
 
-    // indexVm.create = function(){
-    //   indexVm.trips.push(indexVm.newTrip);
-    //   indexVm.newTrip = {};
-    // }
+    indexVm.create = function(){
+      indexVm.trips.push(indexVm.newTrip);
+      indexVm.newTrip = {};
+      }
   }
-
 })();

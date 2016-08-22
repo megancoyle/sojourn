@@ -10,17 +10,12 @@
     ]);
 
   function TripsShowCtrlFunc($stateParams, TripFactory) {
-    // this.trip = TripFactory.get({id: $stateParams.id});
-
-    var showVm = this;
-    showVm.trip = TripFactory.get({id: $stateParams.id});
-
-    showVm.update = function() {
-      TripFactory.get({id: $stateParams.id}) = showVm.trip;
-    };
-
-    showVm.delete = function() {
-      TripFactory.splice( $stateParams.id, 1 );
+    this.trip = TripFactory.get({id: $stateParams.id});
+    this.update = function(){
+    this.trip.$update({id: $stateParams.id})
+    }
+    this.destroy = function(){
+    this.trip.$delete({id: $stateParams.id});
     }
   }
 

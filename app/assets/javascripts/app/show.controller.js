@@ -4,12 +4,14 @@
   angular
     .module("sojourn")
     .controller("TripsShowCtrl", [
+      "$stateParams",
       "TripFactory",
       TripsShowCtrlFunc
     ]);
 
-  TripsShowCtrlFunc.$inject = ["$stateParams"]
   function TripsShowCtrlFunc($stateParams, TripFactory) {
+    // this.trip = TripFactory.get({id: $stateParams.id});
+
     var showVm = this;
     showVm.trip = TripFactory.get({id: $stateParams.id});
 

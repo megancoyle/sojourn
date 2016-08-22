@@ -8,7 +8,9 @@
       TripFactoryFunc
     ]);
 
-    function TripFactoryFunc( $resource ){
-      return $resource( "http://localhost:3000/api/trips" );
-    }
+    function TripFactoryFunc($resource){
+      return $resource("/api/trips/:id", {}, {
+      update: {method: "PUT"}
+    });
+  }
 }());

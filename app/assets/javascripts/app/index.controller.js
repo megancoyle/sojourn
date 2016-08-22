@@ -4,20 +4,20 @@
   angular
     .module("sojourn")
     .controller("TripsIndexCtrl", [
-      "$resource",
+      "$scope",
       "TripFactory",
       TripsIndexCtrlFunc
     ])
 
-  function TripsIndexCtrlFunc(TripFactory){
-    var indexVm = this;
-    indexVm.trips = TripFactoryFunc();
-    indexVm.newTrip = {};
+  function TripsIndexCtrlFunc($scope, TripFactory){
+    // $scope.trips = TripFactoryFunc().query;
+    this.trips = TripFactory.query();
+    // console.log($scope.trips);
 
-    indexVm.create = function(){
-      indexVm.trips.push(indexVm.newTrip);
-      indexVm.newTrip = {};
-    }
+    // indexVm.create = function(){
+    //   indexVm.trips.push(indexVm.newTrip);
+    //   indexVm.newTrip = {};
+    // }
   }
 
 })();

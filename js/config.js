@@ -23,4 +23,10 @@ function RouterFunc($stateProvider){
       controller: "TripsShowCtrl",
       controllerAs: "showVm"
     })
+    .state("destIndex", {
+      url: "trips/:id/destinations",
+      templateUrl: "js/destinations/templates/index.html",
+      controller: "DestIndexCtrl",
+      controllerAs: "indexVm"
+    })
 }

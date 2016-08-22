@@ -2,6 +2,6 @@
 
 (function(){
   angular
-  .module("trips", ["ui.router"])
+  .module("trips", ["destinations", "ui.router"])
 
 })();

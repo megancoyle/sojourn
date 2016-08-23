@@ -11440,3 +11440,81 @@ Processing by Api::TripsController#index as HTML
 Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/api/trips" for ::1 at 2016-08-23 12:48:29 -0400
+Processing by Api::TripsController#index as HTML
+  [1m[36mTrip Load (1.1ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 200 OK in 34ms (Views: 23.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 12:48:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 213ms (Views: 210.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/trips" for ::1 at 2016-08-23 12:48:37 -0400
+Processing by Api::TripsController#index as HTML
+  [1m[36mTrip Load (11.0ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 200 OK in 23ms (Views: 11.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 12:48:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 127ms (Views: 118.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 12:49:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/trips" for ::1 at 2016-08-23 12:49:01 -0400
+Processing by Api::TripsController#index as HTML
+  [1m[36mTrip Load (1.1ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/trips" for ::1 at 2016-08-23 12:49:02 -0400
+Processing by Api::TripsController#index as HTML
+  [1m[36mTrip Load (0.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/trips" for ::1 at 2016-08-23 12:49:03 -0400
+Processing by Api::TripsController#index as HTML
+  [1m[36mTrip Load (2.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/trips" for ::1 at 2016-08-23 12:49:05 -0400
+Processing by Api::TripsController#index as HTML
+  [1m[36mTrip Load (0.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/trips/2" for ::1 at 2016-08-23 12:49:07 -0400
+Processing by Api::TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (5.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 155ms (Views: 1.8ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 12:49:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/trips/2" for ::1 at 2016-08-23 12:49:08 -0400
+Processing by Api::TripsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTrip Load (5.0ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 0.9ms | ActiveRecord: 7.1ms)
+
+

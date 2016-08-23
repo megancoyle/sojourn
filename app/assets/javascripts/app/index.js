@@ -6,7 +6,8 @@
     "ui.router",
     "templates",
     "ngResource",
-    "uiGmapgoogle-maps"
+    "uiGmapgoogle-maps",
+    "ngMaterial"
   ])
   .config([
     "$stateProvider",

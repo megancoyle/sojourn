@@ -9,12 +9,10 @@
     ])
     .config([
       "$stateProvider",
-      "$locationProvider",
       RouterFunc
     ])
 
-    function RouterFunc($stateProvider, $locationProvider) {
-      $locationProvider.html5Mode(true);
+    function RouterFunc($stateProvider) {
       $stateProvider
         .state("indexShow", {
           url: "/",

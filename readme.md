@@ -4,4 +4,4 @@
 * Angular JS
 
 ## User Stories
-[Check out the user stories here](user_stories.md)
+[Check out the user stories here](planning/user_stories.md)

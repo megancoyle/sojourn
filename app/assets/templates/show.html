@@ -1,0 +1,13 @@
+<div class="content">
+
+  <h2>{{showVm.trip.location}}</h2>
+  <p>{{showVm.trip.start}} - {{showVm.trip.end}}</p>
+
+  <form data-ng-submit="showVm.update()">
+    <input data-ng-model="showVm.trip.location" />
+    <input data-ng-model="showVm.trip.start" />
+    <input data-ng-model="showVm.trip.end" />
+    <button type="submit">Update</button>
+    <button data-ui-sref="tripsIndex" data-ng-click="showVm.delete()">Delete</button>
+  </form>
+</div>

@@ -18,6 +18,9 @@
 //= require angular-aria.js
 //= require angular-animate.js
 //= require angular-material.js
+//= require lodash/dist/lodash
+//= require angular-google-maps/dist/angular-google-maps
+//= require angular-simple-logger/dist/angular-simple-logger
 //= require angular-rails-templates
 //= require_tree ../templates
 //= require ./app

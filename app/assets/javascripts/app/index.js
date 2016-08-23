@@ -15,6 +15,12 @@
 
     function RouterFunc($stateProvider) {
       $stateProvider
+        .state("indexShow", {
+          url: "",
+          templateUrl: "welcome.html",
+          controller: "WelcomeCtrl",
+          controllerAs: "indexVm"
+        })
         .state("tripsIndex", {
           url: "/trips",
           templateUrl: "index.html",

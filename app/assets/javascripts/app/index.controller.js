@@ -4,11 +4,12 @@
   angular
     .module("sojourn")
     .controller("TripsIndexCtrl", [
+      "$state",
       "TripService",
       TripsIndexCtrlFunc
     ])
 
-  function TripsIndexCtrlFunc(TripService){
+  function TripsIndexCtrlFunc($state, TripService){
     var indexVm = this;
 
     TripService.query().then(function (trips) {
@@ -23,7 +24,7 @@
 
     indexVm.create = function(){
       TripService.create(indexVm.newTrip).then(function (trip) {
-        console.log('Successfully created trip', trip);
+        $state.go("tripShow", {id: trip.id});
       }).catch(function (err) {
         console.error('Error creating trip', err);
       });

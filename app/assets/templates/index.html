@@ -9,6 +9,8 @@
   </form>
   <br>
 
+  <md-datepicker data-ng-model="indexVm.newTrip.start"></md-datepicker>
+
   <div data-ng-repeat="trip in indexVm.trips">
     <a data-ui-sref="tripShow({id: trip.id})">
       {{trip.location}}<br>

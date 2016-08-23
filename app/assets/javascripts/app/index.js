@@ -15,7 +15,7 @@
     function RouterFunc($stateProvider) {
       $stateProvider
         .state("indexShow", {
-          url: "/",
+          url: "",
           templateUrl: "welcome.html",
           controller: "WelcomeCtrl",
           controllerAs: "indexVm"

@@ -17,6 +17,8 @@
     });
 
     indexVm.newTrip = {};
+    indexVm.newTrip.start = new Date();
+    indexVm.newTrip.end = new Date();
 
     indexVm.create = function(){
       TripService.create(indexVm.newTrip).then(function (trip) {

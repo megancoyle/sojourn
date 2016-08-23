@@ -21,7 +21,7 @@
           controllerAs: "indexVm"
         })
         .state("tripShow", {
-          url: "trips/:id",
+          url: "/trips/:id",
           templateUrl: "show.html",
           controller: "TripsShowCtrl",
           controllerAs: "showVm"

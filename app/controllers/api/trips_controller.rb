@@ -37,18 +37,15 @@ class Api::TripsController < ApplicationController
   end
 
   def destroy
-    @trip = Trip.find(params[:id])
-    if @trip.destroy
-      format.json { head :no_content, status: :ok }
-    else
-      format.json { render json: @trip.errors, status: :unprocessable_entity }
-    end
+    Trip.delete(params[:id])
+    @trips = Trip.all
+    render json: @trips
   end
 
 
   private
     def trip_params
-      params.permit(:location, :start, :end)
+      params.require(:trip).permit(:location, :start, :end)
     end
 
 end

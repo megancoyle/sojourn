@@ -4,23 +4,25 @@
   angular
     .module("sojourn")
     .controller("TripsIndexCtrl", [
-      "$scope",
-      "TripFactory",
+      "TripService",
       TripsIndexCtrlFunc
     ])
 
-  function TripsIndexCtrlFunc($scope, TripFactory){
+  function TripsIndexCtrlFunc(TripService){
     var indexVm = this;
-    indexVm.trips = TripFactory.query();
+
+    TripService.query().then(function (trips) {
+      indexVm.trips = trips;
+    });
+
     indexVm.newTrip = {};
 
     indexVm.create = function(){
-      this.trip = new TripFactory();
-      this.create = function() {
-        this.trip.$save()
-      }
-      // indexVm.trips.push(indexVm.newTrip);
-      // indexVm.newTrip = {};
-      }
+      TripService.create(indexVm.newTrip).then(function (trip) {
+        console.log('Successfully created trip', trip);
+      }).catch(function (err) {
+        console.error('Error creating trip', err);
+      });
+    }
   }
 })();

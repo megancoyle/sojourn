@@ -22,6 +22,7 @@ gem "bower-rails", "~> 0.10.0"
 
 gem 'angular-rails-templates'
 
+gem 'rack-cors', :require => 'rack/cors'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

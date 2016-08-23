@@ -1,24 +1,28 @@
 "use strict";
 
 (function(){
-  angular
-    .module("sojourn")
-    .controller("TripsShowCtrl", [
-      "$stateParams",
-      "$state",
-      "TripFactory",
-      TripsShowCtrlFunc
-    ]);
+  var TripsShowCtrl = function($stateParams, $state, TripService) {
+    var showVm = this;
 
-  function TripsShowCtrlFunc($stateParams, $state, TripFactory) {
-    this.trip = TripFactory.get({id: $stateParams.id});
-    this.update = function(){
-    this.trip.$update({id: $stateParams.id})
-    $state.go("tripsIndex");
-    }
-    this.destroy = function(){
-    this.trip.$delete({id: $stateParams.id});
-    }
-  }
+    TripService.get({id: $stateParams.id}).then(function (trip) {
+      showVm.trip = trip;
+    })
 
+    this.update = function() {
+      TripService.update({
+        id: $stateParams.id,
+        update: showVm.trip
+      })
+    }
+
+    this.delete = function() {
+      TripService.delete({
+        id: $stateParams.id
+        }
+      );
+    }
+  };
+
+  TripsShowCtrl.$inject = ['$stateParams', '$state', 'TripService'];
+  angular.module("sojourn").controller("TripsShowCtrl", TripsShowCtrl);
 })();

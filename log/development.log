@@ -11051,3 +11051,178 @@ Processing by Api::TripsController#show as HTML
 Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.9ms)
 
 
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/mcoyle/wdi/projects/sojourn/config/environment.rb:5)
+DEPRECATION WARNING: Passing strings or symbols to the middleware builder is deprecated, please change
+them to actual class references.  For example:
+
+  "Rack::Cors" => Rack::Cors
+
+ (called from <top (required)> at /Users/mcoyle/wdi/projects/sojourn/config/environment.rb:5)
+Started GET "/" for ::1 at 2016-08-23 11:50:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:45 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:46 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:49 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:49 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:50 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:54 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:50:59 -0400
+Started GET "/" for ::1 at 2016-08-23 11:51:00 -0400
+Started GET "/" for ::1 at 2016-08-23 11:51:03 -0400
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from <class:ApplicationController> at /Users/mcoyle/wdi/projects/sojourn/app/controllers/application_controller.rb:4)
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 1918ms (Views: 1891.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/trips" for ::1 at 2016-08-23 11:51:06 -0400
+Processing by Api::TripsController#index as HTML
+  [1m[36mTrip Load (6.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+Completed 200 OK in 96ms (Views: 12.6ms | ActiveRecord: 49.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 11:51:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 193ms (Views: 181.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 11:51:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 11:51:35 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 131ms (Views: 123.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-08-23 11:55:21 -0400
+  
+ArgumentError ('/' is not a supported controller name. This can lead to potential routing problems. See http://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:4:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/mcoyle/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (133.9ms)
+Started GET "/" for ::1 at 2016-08-23 11:55:31 -0400
+DEPRECATION WARNING: after_filter is deprecated and will be removed in Rails 5.1. Use after_action instead. (called from <class:ApplicationController> at /Users/mcoyle/wdi/projects/sojourn/app/controllers/application_controller.rb:4)
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+

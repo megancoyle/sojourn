@@ -24,6 +24,8 @@ gem 'angular-rails-templates'
 
 gem 'rack-cors', :require => 'rack/cors'
 
+gem 'angular-material-rails'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

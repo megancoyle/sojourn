@@ -5,7 +5,8 @@
     .module("sojourn", [
       "ui.router",
       "templates",
-      "ngResource"
+      "ngResource",
+      "ngMaterial"
     ])
     .config([
       "$stateProvider",

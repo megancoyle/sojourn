@@ -12,7 +12,7 @@
   <div data-ng-repeat="trip in indexVm.trips">
     <a data-ui-sref="tripShow({id: trip.id})">
       {{trip.location}}<br>
-      {{trip.start}} - {{trip.end}}
+      {{trip.start | date:'mediumDate'}} - {{trip.end | date:'mediumDate'}}
     </a>
   </div>
 </div>

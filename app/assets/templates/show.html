@@ -1,7 +1,7 @@
 <div class="content">
 
   <h2>{{showVm.trip.location}}</h2>
-  <p>{{showVm.trip.start}} - {{showVm.trip.end}}</p>
+  <p>{{showVm.trip.start | date:'mediumDate'}} - {{showVm.trip.end | date:'mediumDate'}}</p>
 
   <form data-ng-submit="showVm.update()">
     <input data-ng-model="showVm.trip.location" />

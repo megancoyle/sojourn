@@ -12,8 +12,6 @@
   function TripsIndexCtrlFunc($state, TripService){
     var indexVm = this;
 
-    console.log('test');
-
     TripService.query().then(function (trips) {
       indexVm.trips = trips;
     });

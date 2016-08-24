@@ -77,20 +77,20 @@
         return;
         $scope.coordsUpdates++;
       });
-      $timeout(function () {
-        $scope.marker.coords = {
-          latitude: 42.1451,
-          longitude: -100.6680
-        };
-        $scope.dynamicMoveCtr++;
-        $timeout(function () {
-          $scope.marker.coords = {
-            latitude: 43.1451,
-            longitude: -102.6680
-          };
-          $scope.dynamicMoveCtr++;
-        }, 2000);
-      }, 1000);
+      // $timeout(function () {
+      //   $scope.marker.coords = {
+      //     latitude: 42.1451,
+      //     longitude: -100.6680
+      //   };
+      //   $scope.dynamicMoveCtr++;
+      //   $timeout(function () {
+      //     $scope.marker.coords = {
+      //       latitude: 43.1451,
+      //       longitude: -102.6680
+      //     };
+      //     $scope.dynamicMoveCtr++;
+      //   }, 2000);
+      // }, 1000);
 
     }
   })();

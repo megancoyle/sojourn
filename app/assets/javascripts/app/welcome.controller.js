@@ -13,9 +13,6 @@
 
   function WelcomeCtrlFunc($state, TripService, $scope, $timeout){
     var indexVm = this;
-    this.getLocationName = function(){
-      this.newTrip.location = this.newTrip.location
-    }
 
     $scope.searchbox = {
       template:'searchbox.tpl.html',
@@ -34,29 +31,31 @@
           }
         }
 
-    this.map = false
-    var testVar;
-    console.log(testVar);
-    TripService.query().then(function (trips) {
-      indexVm.trips = trips;
-    });
+        this.map = false
+        var testVar;
+        console.log(testVar);
+        TripService.query().then(function (trips) {
+          indexVm.trips = trips;
+        });
+        
+        indexVm.newTrip = {};
+        indexVm.newTrip.start = new Date();
+        indexVm.newTrip.end = new Date();
 
-    indexVm.create = function(){
-      indexVm.newTrip = {};
-      indexVm.newTrip.location = $scope.location;
-      indexVm.newTrip.start = new Date();
-      indexVm.newTrip.end = new Date();
-      TripService.create(indexVm.newTrip).then(function (trip) {
-        $state.go("tripShow", {id: trip.id});
-      }).catch(function (err) {
-        console.error('Error creating trip', err);
-      });
-    }
+        indexVm.create = function(){
+          indexVm.newTrip.location = $scope.location;
 
-    $scope.map = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4 };
-    $scope.options = {scrollwheel: false};
-    $scope.coordsUpdates = 0;
-    $scope.dynamicMoveCtr = 0;
+          TripService.create(indexVm.newTrip).then(function (trip) {
+            $state.go("tripShow", {id: trip.id});
+          }).catch(function (err) {
+            console.error('Error creating trip', err);
+          });
+        }
+
+        $scope.map = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4 };
+        $scope.options = {scrollwheel: false};
+        $scope.coordsUpdates = 0;
+        $scope.dynamicMoveCtr = 0;
 
 
         $scope.marker = {

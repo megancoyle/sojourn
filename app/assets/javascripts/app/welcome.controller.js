@@ -6,46 +6,46 @@
   .controller("WelcomeCtrl", [
     "$state",
     "TripService",
+    "GpsService",
     "$scope",
     "$timeout",
     WelcomeCtrlFunc
   ])
 
-  function WelcomeCtrlFunc($state, TripService, $scope, $timeout){
+  function WelcomeCtrlFunc($state, TripService, GpsService, $scope, $timeout){
     var indexVm = this;
+
+    indexVm.newTrip = {};
+    indexVm.newTrip.start = new Date();
+    indexVm.newTrip.end = new Date();
 
     $scope.searchbox = {
       template:'searchbox.tpl.html',
       parentdiv:'searchBoxParent',
       events:{
         places_changed: function (searchBox) {
-          console.log(searchBox)
-          // $scope.ngShow = !$scope.ngShow
-          console.log(searchBox.gm_accessors_.places.Od.formattedPrediction)
           $scope.location = searchBox.gm_accessors_.places.Od.formattedPrediction;
-          console.log(searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry
-            .viewport.j.H);
-            console.log(searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry
-              .viewport.H.H);
+          indexVm.newTrip.location = $scope.location;
+          GpsService.setLatitude(searchBox);
+          GpsService.setLongitude(searchBox);
+          console.log(GpsService.getLatitude());
+          console.log(GpsService.getLongitude());
             }
           }
         }
 
         this.map = false
         var testVar;
-        console.log(testVar);
+        // console.log(testVar);
         TripService.query().then(function (trips) {
           indexVm.trips = trips;
         });
-        
-        indexVm.newTrip = {};
-        indexVm.newTrip.start = new Date();
-        indexVm.newTrip.end = new Date();
 
         indexVm.create = function(){
-          indexVm.newTrip.location = $scope.location;
+
 
           TripService.create(indexVm.newTrip).then(function (trip) {
+            console.log($scope.location);
             $state.go("tripShow", {id: trip.id});
           }).catch(function (err) {
             console.error('Error creating trip', err);

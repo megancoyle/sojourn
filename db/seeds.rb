@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 trip_data = JSON.parse(File.read("db/trips_data.json"))
 Trip.destroy_all
 Trip.create!(trip_data)

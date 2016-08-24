@@ -15,6 +15,14 @@ ActiveRecord::Schema.define(version: 20160824155027) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "details", force: :cascade do |t|
+    t.string   "title"
+    t.integer  "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trip_id"], name: "index_details_on_trip_id", using: :btree
+  end
+
   create_table "plans", force: :cascade do |t|
     t.string "name"
     t.string "weather"
@@ -29,4 +37,5 @@ ActiveRecord::Schema.define(version: 20160824155027) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "details", "trips"
 end

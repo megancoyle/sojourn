@@ -1,0 +1,13 @@
+<div class="content">
+  <h2>{{showVm.plan.name}}</h2>
+  <p>{{showVm.plan.weather}}<br>
+  {{showVm.plan.possible_events}}</p>
+
+  <form data-ng-submit="showVm.update()">
+    <input data-ng-model="showVm.plan.name" />
+    <input data-ng-model="showVm.plan.weather" />
+    <input data-ng-model="showVm.plan.possible_events" />
+    <button type="submit">Update</button>
+    <button data-ui-sref="plansIndex" data-ng-click="showVm.delete()">Delete</button>
+  </form>
+</div>

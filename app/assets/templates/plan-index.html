@@ -1,0 +1,17 @@
+<div class="content">
+  <h2>Plans Index</h2>
+  <form data-ng-submit="indexVm.create()">
+    <input placeholder="Name" data-ng-model="indexVm.newPlan.name" />
+    <input placeholder="Weather" data-ng-model="indexVm.newPlan.weather" />
+    <input placeholder="Things to Do" data-ng-model="indexVm.newPlan.possible_events" />
+
+    <button type="submit">Create</button>
+  </form>
+  <br>
+
+  <div data-ng-repeat="plan in indexVm.plans">
+    <a data-ui-sref="planShow({id: plan.id})">
+      {{plan.name}}
+    </a>
+  </div>
+</div>

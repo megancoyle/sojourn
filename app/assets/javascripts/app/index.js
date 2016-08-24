@@ -46,6 +46,18 @@
       controller: "TripsShowCtrl",
       controllerAs: "showVm"
     })
+    .state("plansIndex", {
+      url: "/plans",
+      templateUrl: "plan-index.html",
+      controller: "PlansIndexCtrl",
+      controllerAs: "indexVm"
+    })
+    .state("planShow", {
+      url: "/plans/:id",
+      templateUrl: "plan-show.html",
+      controller: "PlansShowCtrl",
+      controllerAs: "showVm"
+    })
   }
 
 })();

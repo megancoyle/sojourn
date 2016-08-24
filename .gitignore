@@ -12,6 +12,7 @@
 /log/development.log
 /tmp/*
 /tmp/pids/server.pid
+/public/assets
 !/log/.keep
 !/tmp/.keep
 

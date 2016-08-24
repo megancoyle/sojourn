@@ -5,8 +5,8 @@
 
   <form data-ng-submit="showVm.update()">
     <input data-ng-model="showVm.trip.location" />
-    <input data-ng-model="showVm.trip.start" />
-    <input data-ng-model="showVm.trip.end" />
+    <input data-ng-model="showVm.trip.start | date:'mediumDate'" />
+    <input data-ng-model="showVm.trip.end | date:'mediumDate'" />
     <button type="submit">Update</button>
     <button data-ui-sref="tripsIndex" data-ng-click="showVm.delete()">Delete</button>
   </form>

@@ -1,12 +1,12 @@
 <div class="content">
 
-  <h2>{{showVm.trip.location}}</h2>
-  <p>{{showVm.trip.start | date:'mediumDate'}} - {{showVm.trip.end | date:'mediumDate'}}</p>
+  <h2>{{showVm.trip.trip.location}}</h2>
+  <p>{{showVm.trip.trip.start | date:'mediumDate'}} - {{showVm.trip.trip.end | date:'mediumDate'}}</p>
 
   <form data-ng-submit="showVm.update()">
-    <input data-ng-model="showVm.trip.location" />
-    <input data-ng-model="showVm.trip.start" />
-    <input data-ng-model="showVm.trip.end" />
+    <input data-ng-model="showVm.trip.trip.location" />
+    <input data-ng-model="showVm.trip.trip.start" />
+    <input data-ng-model="showVm.trip.trip.end" />
     <button type="submit">Update</button>
     <button data-ui-sref="tripsIndex" data-ng-click="showVm.delete()">Delete</button>
   </form>
@@ -20,4 +20,11 @@
       </ui-gmap-marker>
     </ui-gmap-google-map>
 </div>
+  <div data-ng-repeat="detail in showVm.trip.details.title">
+      {{trip.detail.title}}<br>
+  </div>
+  <form data-ng-submit="indexVm.create()">
+    <input placeholder="Detail" data-ng-model="indexVm.newDetail.title" />
+    <button type="submit">Add</button>
+  </form>
 </div>

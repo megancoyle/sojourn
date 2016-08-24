@@ -6,7 +6,11 @@ class Api::TripsController < ApplicationController
 
   def show
     @trip = Trip.find(params[:id])
-    render :json => @trip
+    @details = @trip.details
+    trip = {
+      trip: @trip, details: @details
+    }
+    render :json => trip
   end
 
   def new

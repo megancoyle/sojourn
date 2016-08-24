@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   namespace :api do
-    resources :trips
+    resources :trips do
+      resources :details
+    end
   end
 
   namespace :api do

@@ -5,7 +5,8 @@
     var showVm = this;
 
     TripService.get({id: $stateParams.id}).then(function (trip) {
-      showVm.trip = trip;
+      showVm.trip = trip
+      showVm.details = trip.details
     })
 
     this.update = function() {

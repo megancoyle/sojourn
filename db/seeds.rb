@@ -12,3 +12,6 @@ Trip.create!(trip_data)
 plan_data = JSON.parse(File.read("db/plan_data.json"))
 Plan.destroy_all
 Plan.create!(plan_data)
+
+trip = Trip.first
+Detail.create(title: "whatevs", trip: trip)

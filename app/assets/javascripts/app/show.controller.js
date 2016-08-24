@@ -1,7 +1,7 @@
 "use strict";
 
 (function(){
-  var TripsShowCtrl = function($stateParams, $state, TripService, $scope, $timeout, GoogleMapApi) {
+  var TripsShowCtrl = function($stateParams, $state, TripService, $scope, $timeout) {
     var showVm = this;
 
     TripService.get({id: $stateParams.id}).then(function (trip) {

@@ -1,8 +1,11 @@
 "use strict";
 
 (function(){
-  var TripsShowCtrl = function($stateParams, $state, TripService, $scope, $timeout) {
+  var TripsShowCtrl = function($stateParams, $state, TripService, GpsService, $scope, $timeout) {
     var showVm = this;
+
+    showVm.latitude = GpsService.getLatitude();
+    showVm.longitude = GpsService.getLongitude();
 
     TripService.get({id: $stateParams.id}).then(function (trip) {
       showVm.trip = trip;
@@ -21,7 +24,7 @@
       }
     );
   }
-  $scope.map = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4 };
+  $scope.map = {center: {latitude: GpsService.getLatitude(), longitude: GpsService.getLongitude() }, zoom: 4 };
   $scope.options = {scrollwheel: false};
   $scope.coordsUpdates = 0;
   $scope.dynamicMoveCtr = 0;
@@ -40,8 +43,8 @@
       $scope.marker = {
         id: 0,
         coords: {
-          latitude: 40.1451,
-          longitude: -99.6680
+          latitude: GpsService.getLatitude(),
+          longitude: GpsService.getLongitude()
         },
         options: { draggable: true },
         events: {
@@ -66,20 +69,20 @@
         return;
         $scope.coordsUpdates++;
       });
-      $timeout(function () {
-        $scope.marker.coords = {
-          latitude: 42.1451,
-          longitude: -100.6680
-        };
-        $scope.dynamicMoveCtr++;
-        $timeout(function () {
-          $scope.marker.coords = {
-            latitude: 43.1451,
-            longitude: -102.6680
-          };
-          $scope.dynamicMoveCtr++;
-        }, 2000);
-      }, 1000);
+      // $timeout(function () {
+      //   $scope.marker.coords = {
+      //     latitude: 42.1451,
+      //     longitude: -100.6680
+      //   };
+      //   $scope.dynamicMoveCtr++;
+      //   $timeout(function () {
+      //     $scope.marker.coords = {
+      //       latitude: 43.1451,
+      //       longitude: -102.6680
+      //     };
+      //     $scope.dynamicMoveCtr++;
+      //   }, 2000);
+      // }, 1000);
 
       showVm.trips.getDateRange = function(startDate, endDate){
         var dateArray = new Array();
@@ -101,6 +104,6 @@
 
     showVm.trips.getDateRange(showVm.trip.start, showVm.trip.end)
 
-    TripsShowCtrl.$inject = ['$stateParams', '$state', 'TripService', "$scope", "$timeout"];
+    TripsShowCtrl.$inject = ['$stateParams', '$state', 'TripService', 'GpsService', "$scope", "$timeout"];
     angular.module("sojourn").controller("TripsShowCtrl", TripsShowCtrl);
   })();

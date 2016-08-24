@@ -10,6 +10,13 @@
     <button type="submit">Update</button>
     <button data-ui-sref="tripsIndex" data-ng-click="showVm.delete()">Delete</button>
   </form>
+
+  <!-- <div data-ng-repeat="date in showVm.getDateRange(showVm.start, showVm.end)"> -->
+  <div>
+    <div>{{showVm.trip.start}}</div>
+    <div>{{showVm.getDateRange(showVm.trip.start, showVm.trip.end)}}</div>
+  </div>
+
   <div id="map_canvas">
     <script id="searchbox.tpl.html" type="text/ng-template">
       <input type="text" placeholder="Search">

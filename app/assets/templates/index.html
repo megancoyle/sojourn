@@ -9,6 +9,8 @@
   </form>
   <br>
 
+  <div data-ng-repeat="date in indexVm."></div>
+
   <div data-ng-repeat="trip in indexVm.trips">
     <a data-ui-sref="tripShow({id: trip.id})">
       {{trip.location}}<br>

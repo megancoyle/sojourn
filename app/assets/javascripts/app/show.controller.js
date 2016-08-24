@@ -81,9 +81,25 @@
         }, 2000);
       }, 1000);
 
+      showVm.trips.getDateRange = function(startDate, endDate){
+        var dateArray = new Array();
+        console.log(dateArray)
+        var currentDate = startDate;
+        function addDays(date, days){
+          var dat = new Date(date.valueOf());
+          dat.setDate(dat.getDate() + days);
+          return dat;
+        };
+        while (currentDate <= endDate){
+          dateArray.push(new Date(currentDate));
+          console.log(dateArray);
+          currentDate = addDays(currentDate, 1);
+        }
+        return dateArray;
+      }
     };
 
-
+    showVm.trips.getDateRange(showVm.trip.start, showVm.trip.end)
 
     TripsShowCtrl.$inject = ['$stateParams', '$state', 'TripService', "$scope", "$timeout"];
     angular.module("sojourn").controller("TripsShowCtrl", TripsShowCtrl);

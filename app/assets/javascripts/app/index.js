@@ -13,13 +13,18 @@
     "$stateProvider",
     RouterFunc
   ])
-  .config(function(uiGmapGoogleMapApiProvider) {
+  .config([
+    "uiGmapGoogleMapApiProvider",
+    GoogleMapApiProviderFunc
+  ])
+
+  function GoogleMapApiProviderFunc (uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
       key: 'AIzaSyDNzHXnxO7i2lHvIufJw9jqta_MWpHyjTg',
       v: '3.24',
       libraries: 'places'
     });
-  })
+  }
 
   function RouterFunc($stateProvider) {
     $stateProvider

@@ -2,11 +2,13 @@
   {
     "name": "Trip out West?",
     "weather": "Sunny",
-    "possible_events": "Dancing, eating, sight-seeing"
+    "possible_events": "Dancing, eating, sight-seeing",
+    "notes": "Do that thang"
   },
   {
     "name": "Trip to Europe",
     "weather": "Meh",
-    "possible_events": "Walking, strolling, wandering"
+    "possible_events": "Walking, strolling, wandering",
+    "notes": "Could be a good option"
   }
 ]

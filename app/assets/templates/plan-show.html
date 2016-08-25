@@ -1,13 +1,22 @@
 <div class="content">
   <h2>{{showVm.plan.name}}</h2>
-  <p>{{showVm.plan.weather}}<br>
-  {{showVm.plan.possible_events}}</p>
+  <img src="http://lorempixel.com/860/200/abstract/">
+  <md-tabs>
+    <md-tab label="Weather"><p>{{showVm.plan.weather}}</p></md-tab>
+    <md-tab label="Things to Do"><p>{{showVm.plan.possible_events}}</p></md-tab>
+    <md-tab label="Notes"><p>{{showVm.plan.notes}}</p></md-tab>
+  </md-tabs>
 
-  <form data-ng-submit="showVm.update()">
-    <input data-ng-model="showVm.plan.name" />
-    <input data-ng-model="showVm.plan.weather" />
-    <input data-ng-model="showVm.plan.possible_events" />
-    <button type="submit">Update</button>
-    <button data-ui-sref="plansIndex" data-ng-click="showVm.delete()">Delete</button>
-  </form>
+    <a href="" ng-click="showme=true">Edit</a>
+      <div ng-show="showme">
+        <form data-ng-submit="showVm.update()">
+          <input data-ng-model="showVm.plan.name" />
+          <input data-ng-model="showVm.plan.weather" />
+          <input data-ng-model="showVm.plan.possible_events" />
+          <input data-ng-model="showVm.plan.notes" />
+          <button type="submit" ng-click="showme=false">Update</button>
+          <button data-ui-sref="plansIndex" data-ng-click="showVm.delete()">Delete</button>
+        </form>
+      </div>
+
 </div>

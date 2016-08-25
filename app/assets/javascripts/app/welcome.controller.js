@@ -14,7 +14,7 @@
 
   function WelcomeCtrlFunc($state, TripService, GpsService, $scope, $timeout){
     var indexVm = this;
-
+    // new trip date logic
     indexVm.newTrip = {};
     indexVm.newTrip.start = new Date();
     indexVm.newTrip.end = new Date();

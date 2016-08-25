@@ -3,10 +3,10 @@
 (function(){
   var TripsShowCtrl = function($stateParams, $state, TripService, GpsService, $scope, $timeout) {
     var showVm = this;
-
+    // retrieve lat longs for map
     showVm.latitude = GpsService.getLatitude();
     showVm.longitude = GpsService.getLongitude();
-
+    // CRUD for trips
     TripService.get({id: $stateParams.id}).then(function (trip) {
       showVm.trip = trip;
     })
@@ -24,6 +24,7 @@
       }
     );
   }
+  // map setup
   $scope.map = {center: {latitude: GpsService.getLatitude(), longitude: GpsService.getLongitude() }, zoom: 4 };
   $scope.options = {scrollwheel: false};
   $scope.coordsUpdates = 0;
@@ -69,40 +70,7 @@
         return;
         $scope.coordsUpdates++;
       });
-      // $timeout(function () {
-      //   $scope.marker.coords = {
-      //     latitude: 42.1451,
-      //     longitude: -100.6680
-      //   };
-      //   $scope.dynamicMoveCtr++;
-      //   $timeout(function () {
-      //     $scope.marker.coords = {
-      //       latitude: 43.1451,
-      //       longitude: -102.6680
-      //     };
-      //     $scope.dynamicMoveCtr++;
-      //   }, 2000);
-      // }, 1000);
-
-      showVm.trips.getDateRange = function(startDate, endDate){
-        var dateArray = new Array();
-        console.log(dateArray)
-        var currentDate = startDate;
-        function addDays(date, days){
-          var dat = new Date(date.valueOf());
-          dat.setDate(dat.getDate() + days);
-          return dat;
-        };
-        while (currentDate <= endDate){
-          dateArray.push(new Date(currentDate));
-          console.log(dateArray);
-          currentDate = addDays(currentDate, 1);
-        }
-        return dateArray;
-      }
     };
-
-    showVm.trips.getDateRange(showVm.trip.start, showVm.trip.end)
 
     TripsShowCtrl.$inject = ['$stateParams', '$state', 'TripService', 'GpsService', "$scope", "$timeout"];
     angular.module("sojourn").controller("TripsShowCtrl", TripsShowCtrl);

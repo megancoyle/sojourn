@@ -2,6 +2,7 @@
 
 (function(){
   var TripService = function ($http) {
+    // logic for API found at /api/trips
     this.query = function() {
       return $http.get('/api/trips').then(function (res) {
         return res.data;

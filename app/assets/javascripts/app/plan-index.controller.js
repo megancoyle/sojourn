@@ -19,9 +19,6 @@
     indexVm.newPlan = {};
     indexVm.newPlan.start = new Date();
     indexVm.newPlan.end = new Date();
-    // console.log(indexVm.newPlan.start.getTime());
-
-    // console.log(indexVm.newPlan)
 
     indexVm.create = function(){
       PlanService.create(indexVm.newPlan).then(function (plan) {

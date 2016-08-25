@@ -26,8 +26,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background: url("/images/plane.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -38,7 +36,13 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*Header and Nav */
+html, body {
+  min-height: 900px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Header, Nav, and main styles */
 header {
  background: black;
 }
@@ -77,9 +81,8 @@ nav a {
 
 .content {
    background: rgba(255,255,255,0.8);
-   padding: 40px;
+   padding: 20px 40px 40px 40px;
    margin-top: 30px;
-   margin-bottom: 30px;
 }
 
 /* Welcome Page */
@@ -90,6 +93,12 @@ nav a {
   color: white;
 }
 
+#welcome h1 {
+  font-family: 'Reenie Beanie', cursive;
+  text-align: center;
+  font-size: 3em;
+}
+
 #welcome input {
    display: block;
    margin-top: 10px;
@@ -97,17 +106,23 @@ nav a {
    width: 300px;
 }
 
+input.ng-scope {
+    margin-left: 20px;
+}
+
 #welcome button {
    margin-top: 10px;
 }
 
 #map_canvas {
-   height: 500px;
-   width: 500px;
+   height: 400px;
+   width: 950px;
+   max-width: 100%;
    margin: 0px;
    position: relative;
  }
 
+/* Map styles */
  .angular-google-map-container {
    position: absolute;
    top: 0;
@@ -115,3 +130,26 @@ nav a {
    right: 0;
    left: 0;
  }
+
+
+/* Styles for images and graphics */
+img {
+  max-width: 100%;
+}
+.icon-container {
+    text-align: center;
+    clear: both;
+    display: block;
+    clear: both;
+    overflow: auto;
+    padding-top: 20px;
+}
+.graphic {
+    font-weight: bold;
+    font-size: 14px;
+    width: 250px;
+    padding-bottom: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}

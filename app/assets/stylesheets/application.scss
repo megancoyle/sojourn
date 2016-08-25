@@ -114,14 +114,6 @@ input.ng-scope {
    margin-top: 10px;
 }
 
-#map_canvas {
-   height: 400px;
-   width: 950px;
-   max-width: 100%;
-   margin: 0px;
-   position: relative;
- }
-
 /* Map styles */
  .angular-google-map-container {
    position: absolute;
@@ -131,6 +123,20 @@ input.ng-scope {
    left: 0;
  }
 
+ #map_canvas {
+    height: 400px;
+    width: 950px;
+    max-width: 100%;
+    margin: 0px;
+    position: relative;
+  }
+
+ .prevent {
+   font-weight: bold;
+   font-size: 16px;
+   text-align: center;
+   color: rgb(124, 128, 130);
+ }
 
 /* Styles for images and graphics */
 img {
@@ -152,12 +158,4 @@ img {
     display: inline-block;
     margin-left: 10px;
     text-align: center;
-}
-
-.prevent {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: rgb(124, 128, 130);
 }

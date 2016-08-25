@@ -5,8 +5,7 @@
     var longitude;
 
     this.setLatitude = function(searchBox){
-      latitude = searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry
-      .viewport.H.H;
+      latitude = searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry.location.lat();
     }
 
     this.getLatitude = function(){
@@ -14,8 +13,7 @@
     }
 
     this.setLongitude = function(searchBox){
-      longitude = searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry
-      .viewport.j.H;
+      longitude = searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry.location.lng();
     }
 
     this.getLongitude = function(){

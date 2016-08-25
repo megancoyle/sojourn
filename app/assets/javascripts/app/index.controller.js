@@ -19,9 +19,6 @@
     indexVm.newTrip = {};
     indexVm.newTrip.start = new Date();
     indexVm.newTrip.end = new Date();
-    // console.log(indexVm.newTrip.start.getTime());
-
-    // console.log(indexVm.newTrip)
 
     indexVm.create = function(){
       TripService.create(indexVm.newTrip).then(function (trip) {

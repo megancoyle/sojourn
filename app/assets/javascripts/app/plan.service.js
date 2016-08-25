@@ -2,6 +2,7 @@
 
 (function(){
   var PlanService = function ($http) {
+    // logic for API found at /api/plans
     this.query = function() {
       return $http.get('/api/plans').then(function (res) {
         return res.data;

@@ -23,8 +23,6 @@
   }
 };
 
-
-
     PlansShowCtrl.$inject = ['$stateParams', '$state', 'PlanService'];
     angular.module("sojourn").controller("PlansShowCtrl", PlansShowCtrl);
   })();

@@ -5,6 +5,8 @@ WDI group project by Ben Brizzi, Megan Coyle, and Taylor Edwards
 Sojourn is a travel app to help users plan their trips.
 
 ## Deployed App
+[![Screenshot](screenshot.png)](https://sojourn-travel.herokuapp.com)
+
 [View Sojourn](https://sojourn-travel.herokuapp.com)
 
 ## Technologies Used

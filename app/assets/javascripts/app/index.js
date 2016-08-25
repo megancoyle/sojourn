@@ -17,7 +17,7 @@
     "uiGmapGoogleMapApiProvider",
     GoogleMapApiProviderFunc
   ])
-
+  // config for google maps
   function GoogleMapApiProviderFunc (uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
       key: 'AIzaSyDNzHXnxO7i2lHvIufJw9jqta_MWpHyjTg',
@@ -28,6 +28,7 @@
 
   function RouterFunc($stateProvider) {
     $stateProvider
+    // controller for homepage
     .state("indexShow", {
       url: "",
       templateUrl: "welcome.html",
@@ -46,6 +47,7 @@
       controller: "TripsShowCtrl",
       controllerAs: "showVm"
     })
+    // controllers for planning section
     .state("plansIndex", {
       url: "/plans",
       templateUrl: "plan-index.html",

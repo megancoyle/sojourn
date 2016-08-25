@@ -42,7 +42,7 @@ html, body {
   padding: 0;
 }
 
-/*Header and Nav */
+/*Header, Nav, and main styles */
 header {
  background: black;
 }
@@ -106,17 +106,23 @@ nav a {
    width: 300px;
 }
 
+input.ng-scope {
+    margin-left: 20px;
+}
+
 #welcome button {
    margin-top: 10px;
 }
 
 #map_canvas {
-   height: 500px;
-   width: 500px;
+   height: 400px;
+   width: 950px;
+   max-width: 100%;
    margin: 0px;
    position: relative;
  }
 
+/* Map styles */
  .angular-google-map-container {
    position: absolute;
    top: 0;
@@ -124,6 +130,9 @@ nav a {
    right: 0;
    left: 0;
  }
+
+
+/* Styles for images and graphics */
 img {
   max-width: 100%;
 }

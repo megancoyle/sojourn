@@ -26,8 +26,6 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background: url("/images/plane.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -36,6 +34,12 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+  min-height: 900px;
+  margin: 0;
+  padding: 0;
 }
 
 /*Header and Nav */
@@ -77,9 +81,8 @@ nav a {
 
 .content {
    background: rgba(255,255,255,0.8);
-   padding: 40px;
+   padding: 20px 40px 40px 40px;
    margin-top: 30px;
-   margin-bottom: 30px;
 }
 
 /* Welcome Page */
@@ -115,3 +118,23 @@ nav a {
    right: 0;
    left: 0;
  }
+img {
+  max-width: 100%;
+}
+.icon-container {
+    text-align: center;
+    clear: both;
+    display: block;
+    clear: both;
+    overflow: auto;
+    padding-top: 20px;
+}
+.graphic {
+    font-weight: bold;
+    font-size: 14px;
+    width: 250px;
+    padding-bottom: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}

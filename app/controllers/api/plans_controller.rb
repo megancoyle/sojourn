@@ -45,7 +45,7 @@ class Api::PlansController < ApplicationController
 
   private
     def plan_params
-      params.require(:plan).permit(:name, :weather, :possible_events)
+      params.require(:plan).permit(:name, :weather, :possible_events, :notes)
     end
 
 end

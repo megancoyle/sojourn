@@ -25,22 +25,11 @@
     );
   }
   // map setup
-  $scope.map = {center: {latitude: GpsService.getLatitude(), longitude: GpsService.getLongitude() }, zoom: 4 };
+  $scope.map = {center: {latitude: GpsService.getLatitude(), longitude: GpsService.getLongitude() }, zoom: 10 };
   $scope.options = {scrollwheel: false};
   $scope.coordsUpdates = 0;
   $scope.dynamicMoveCtr = 0;
 
-  $scope.searchbox = {
-    template:'searchbox.tpl.html',
-    events:{
-      places_changed: function (searchBox) {
-        console.log(searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry
-          .viewport.j.H);
-          console.log(searchBox.gm_accessors_.places.Od.searchBoxPlaces[0].geometry
-            .viewport.H.H);
-          }
-        }
-      }
       $scope.marker = {
         id: 0,
         coords: {

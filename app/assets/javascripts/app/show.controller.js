@@ -25,7 +25,7 @@
     );
   }
   // map setup
-  $scope.map = {center: {latitude: GpsService.getLatitude(), longitude: GpsService.getLongitude() }, zoom: 4 };
+  $scope.map = {center: {latitude: GpsService.getLatitude(), longitude: GpsService.getLongitude() }, zoom: 10 };
   $scope.options = {scrollwheel: false};
   $scope.coordsUpdates = 0;
   $scope.dynamicMoveCtr = 0;

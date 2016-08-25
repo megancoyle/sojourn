@@ -12,4 +12,10 @@
 
   <img src="/images/city-street.jpg" border="0" alt="Street" />
 
+  <div data-ng-repeat="plan in indexVm.plans">
+    <a data-ui-sref="planShow({id: plan.id})">
+      {{plan.name}}
+    </a>
+  </div>
+
 </div>

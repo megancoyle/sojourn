@@ -5,9 +5,17 @@
     <div ng-show="showme">
       <form data-ng-submit="indexVm.create()">
         <input placeholder="Name" data-ng-model="indexVm.newPlan.name" />
-        <input placeholder="Weather" data-ng-model="indexVm.newPlan.weather" />
-        <input placeholder="Things to Do" data-ng-model="indexVm.newPlan.possible_events" />
-        <input placeholder="Notes" data-ng-model="indexVm.newPlan.notes" />
+        <input placeholder="Image URL" data-ng-model="showVm.newPlan.img_url" />
+        <input placeholder="Weather Expectations" data-ng-model="showVm.newPlan.weather" />
+        <input placeholder="Outdoor Activities" data-ng-model="showVm.newPlan.outdoor_activities" />
+        <input placeholder="Neighborhoods to Explore" data-ng-model="showVm.newPlan.neighborhoods" />
+        <input placeholder="People to Visit" data-ng-model="showVm.newPlan.people_to_visit" />
+        <input placeholder="Landmarks to Visit" data-ng-model="showVm.newPlan.landmarks" />
+        <input placeholder="Museums to Visit" data-ng-model="showVm.newPlan.museums" />
+        <input placeholder="Souvenirs to Buy" data-ng-model="showVm.newPlan.souvenirs" />
+        <input placeholder="Food to Try" data-ng-model="showVm.newPlan.food" />
+        <input placeholder= "Possible Events" data-ng-model="showVm.newPlan.possible_events" />
+        <input placeholder="Notes" data-ng-model="showVm.newPlan.notes" />
         <button type="submit">Create</button>
       </form>
     </div>

@@ -1,14 +1,44 @@
 [
   {
-    "name": "Trip out West?",
-    "weather": "Sunny",
-    "possible_events": "Dancing, eating, sight-seeing",
-    "notes": "Do that thang"
+    "name": "Trip to England",
+    "img_url": "https://c2.staticflickr.com/8/7544/15758057982_fd9b4c04dd_b.jpg",
+    "weather": "Will most likely be rainy",
+    "outdoor_activities": "Exploring different neighborhoods",
+    "neighborhoods": "Camden, Chelsea, Bloomsbury",
+    "people_to_visit": "Friends of a couple of relatives",
+    "landmarks": "London Eye, Tower of London, Buckingham Palace",
+    "museums": "British Museum",
+    "souvenirs": "Big Ben desk statues",
+    "food": "Shepherd's Pie, Bangers and Mash",
+    "possible_events": "Outdoor concerts, food festivals, markets",
+    "notes": "Possible make a trek out there during the summer of next year"
   },
   {
-    "name": "Trip to Europe",
-    "weather": "Meh",
+    "name": "Visiting Family in CA",
+    "img_url": "https://c1.staticflickr.com/9/8335/29046776026_ef8059441d_b.jpg",
+    "weather": "Sunny skies and warm weather",
+    "outdoor_activities": "Hiking, strolling around town",
+    "neighborhoods": "Hollywood, Downtown LA",
+    "people_to_visit": "Aunt Beth",
+    "landmarks": "Hollywood walk of fame",
+    "museums": "Museum of Contemporary Art, La Brea Tar Pits, The Broad, Hammer Museum",
+    "souvenirs": "Stars, postcards of the mountains",
+    "food": "Good old fashion American - burgers, gumbo",
     "possible_events": "Walking, strolling, wandering",
-    "notes": "Could be a good option"
+    "notes": "Look into other specific places to check out. Right now I only have a sense of a few basic things to see."
+  },
+  {
+    "name": "Trip to Australia",
+    "img_url": "https://c1.staticflickr.com/9/8265/8633339605_c310a9882c_b.jpg",
+    "weather": "Hoping for sunny weather",
+    "outdoor_activities": "Hiking, camping, sky diving",
+    "neighborhoods": "Thinking of exploring Sydney",
+    "people_to_visit": "Uncle B",
+    "landmarks": "Great Barrier Reef, Sydney Opera House, Great Ocean Road",
+    "museums": "Australian Museum, National Museum of Australia",
+    "souvenirs": "Stuffed animals of kangaroos",
+    "food": "Trout, Pavlova",
+    "possible_events": "Concerts, dancing, bar hopping",
+    "notes": "Take a closer look at what the weather will be like in the future. It will give a better idea of what specific events to attend."
   }
 ]

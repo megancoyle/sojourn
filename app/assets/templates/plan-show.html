@@ -1,17 +1,38 @@
 <div class="content">
   <h2>{{showVm.plan.name}}</h2>
-  <img src="/images/skyline.jpg" border="0" alt="Photos" />
+  <img ng-src="{{showVm.plan.img_url}}" border="0" alt="Photos" />
   <md-tabs>
-    <md-tab label="Weather"><p>{{showVm.plan.weather}}</p></md-tab>
-    <md-tab label="Things to Do"><p>{{showVm.plan.possible_events}}</p></md-tab>
-    <md-tab label="Notes"><p>{{showVm.plan.notes}}</p></md-tab>
+    <md-tab label="Sightseeing">
+      <p><strong>Weather:</strong> {{showVm.plan.weather}}</p>
+      <p><strong>Outdoor Activities:</strong> {{showVm.plan.outdoor_activities}}</p>
+      <p><strong>Neighborhoods:</strong> {{showVm.plan.neighborhoods}}</p>
+      <p><strong>People to Visit:</strong> {{showVm.plan.people_to_visit}}</p>
+    </md-tab>
+    <md-tab label="Events">
+      <p><strong>Landmarks:</strong> {{showVm.plan.landmarks}}</p>
+      <p><strong>Museums:</strong> {{showVm.plan.museums}}</p>
+      <p><strong>Souvenirs to Buy:</strong> {{showVm.plan.souvenirs}}</p>
+      <p><strong>Food to Try:</strong> {{showVm.plan.food}}</p>
+      <p><strong>Possible Events:</strong> {{showVm.plan.possible_events}}</p>
+    </md-tab>
+    <md-tab label="Notes">
+      <p><strong>Additional notes on sights to see:</strong> {{showVm.plan.notes}}</p>
+    </md-tab>
   </md-tabs>
 
     <a href="" ng-click="showme=true">Edit</a>
       <div ng-show="showme">
         <form data-ng-submit="showVm.update()">
           <input data-ng-model="showVm.plan.name" />
+          <input data-ng-model="showVm.plan.img_url" />
           <input data-ng-model="showVm.plan.weather" />
+          <input data-ng-model="showVm.plan.outdoor_activities" />
+          <input data-ng-model="showVm.plan.neighborhoods" />
+          <input data-ng-model="showVm.plan.people_to_visit" />
+          <input data-ng-model="showVm.plan.landmarks" />
+          <input data-ng-model="showVm.plan.museums" />
+          <input data-ng-model="showVm.plan.souvenirs" />
+          <input data-ng-model="showVm.plan.food" />
           <input data-ng-model="showVm.plan.possible_events" />
           <input data-ng-model="showVm.plan.notes" />
           <button type="submit" ng-click="showme=false">Update</button>

@@ -24,7 +24,7 @@
   <img src="/images/city-street.jpg" border="0" alt="Street" />
   <br>
   <h2>Other Plans</h2>
-  <div data-ng-repeat="plan in indexVm.plans">
+  <div data-ng-repeat="plan in indexVm.plans | orderBy:'name'">
     <a data-ui-sref="planShow({id: plan.id})">
       {{plan.name}}
     </a>

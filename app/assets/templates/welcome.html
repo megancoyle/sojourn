@@ -14,6 +14,7 @@
       <input type="text" placeholder="Search">
     </script>
     <ui-gmap-google-map data-ng-show="vm.map" center="map.center" zoom="map.zoom" draggable="true" options="options">
+      <!-- nice job detaching the searchbox from the map/hiding map -->
       <ui-gmap-search-box data-ng-model="indexVm.newTrip.location" options="searchbox.options" template="searchbox.template" events="searchbox.events" parentdiv="searchbox.parentdiv"></ui-gmap-search-box>
     </ui-gmap-google-map>
   </div>

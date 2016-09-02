@@ -20,6 +20,7 @@
     indexVm.newTrip.end = new Date();
     this.go = false;
     this.warning = true;
+    // mixing $scope/vm try to use just one or the other
     $scope.searchbox = {
       template:'searchbox.tpl.html',
       parentdiv:'searchBoxParent',
@@ -29,6 +30,7 @@
           $scope.indexVm.warning = false;
           $scope.location = searchBox.gm_accessors_.places.Od.formattedPrediction;
           indexVm.newTrip.location = $scope.location;
+          // nice
           GpsService.setLatitude(searchBox);
           GpsService.setLongitude(searchBox);
           console.log(GpsService.getLatitude());

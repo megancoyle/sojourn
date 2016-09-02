@@ -24,6 +24,8 @@
       }
     );
   }
+  // i would stick with either vm or $scope and not use both, and lean on the side of the prior
+  // in this way you keep all properties/variables scoped to a particular instance of the controller
   // map setup
   $scope.map = {center: {latitude: GpsService.getLatitude(), longitude: GpsService.getLongitude() }, zoom: 12 };
 
@@ -149,3 +151,5 @@
 TripsShowCtrl.$inject = ['$stateParams', '$state', 'TripService', 'GpsService', "$scope", "$timeout"];
 angular.module("sojourn").controller("TripsShowCtrl", TripsShowCtrl);
 })();
+
+// i usually like to organize my angular in this way: setter method, injections, callback. But there's not a real rule for it. Checkout John Papa's style guidez

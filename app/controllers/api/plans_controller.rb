@@ -1,5 +1,5 @@
 class Api::PlansController < ApplicationController
-
+  # thank you so much for not scaffolding
   def index
     @plans = Plan.all
       render :json => @plans

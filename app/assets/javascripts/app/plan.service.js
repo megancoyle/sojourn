@@ -2,6 +2,7 @@
 
 (function(){
   var PlanService = function ($http) {
+    // use ngresource! then you only to do 1 return and then you get all of this functionality out of the box
     // logic for API found at /api/plans
     this.query = function() {
       return $http.get('/api/plans').then(function (res) {

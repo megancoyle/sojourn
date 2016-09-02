@@ -1,5 +1,5 @@
 (function(){
-
+  // cool service, is it working with the injections at the bottom/commented out?
   function gpsServiceFunc($scope, $timeout, $state){
     var latitude;
     var longitude;
@@ -24,6 +24,7 @@
 
   angular.module("sojourn")
   .service("GpsService", [gpsServiceFunc]);
+  // seems like you're going to want to inject these things, otherwise you can't use the arguments in your callback
   // GpsService.$inject = ['$scope', '$timeout', '$state' ];
 
 }());

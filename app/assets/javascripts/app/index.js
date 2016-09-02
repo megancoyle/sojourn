@@ -18,6 +18,7 @@
     GoogleMapApiProviderFunc
   ])
   // config for google maps
+  // nice job integrating google maps, but i'm not really sure how it integrates into the application
   function GoogleMapApiProviderFunc (uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
       key: 'AIzaSyDNzHXnxO7i2lHvIufJw9jqta_MWpHyjTg',
@@ -29,6 +30,7 @@
   function RouterFunc($stateProvider) {
     $stateProvider
     // controller for homepage
+    // i would either stick to all vm, or being more semantic with all controllerAs's.
     .state("indexShow", {
       url: "",
       templateUrl: "welcome.html",
